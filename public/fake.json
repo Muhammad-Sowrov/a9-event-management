@@ -1,0 +1,62 @@
+[
+    {
+    "id": 1,
+    "category": "Concerts",
+    "image": "https://i.ibb.co/hCWC9md/concerts.jpg",
+    "description": "Immerse yourself in the world of music as you attend our sensational concerts. Experience the thrill of live performances from your favorite artists as they take the stage, filling the air with melodies that will touch your soul. Join us on November 15, 2023, at Venue Name in the heart of City, State for an unforgettable musical journey. Tickets are priced at $50.00. Presented by Live Nation.",
+    "price": 50.00,
+    "date": "2023-11-15",
+    "creator": "Live Nation",
+    "location": "Venue Name, City, State"
+    },
+    {
+    "id": 2,
+    "category": "Music Festivals",
+    "image": "https://i.ibb.co/Mc7DhFk/music.jpg",
+    "description": "Embark on an epic musical adventure at our grand music festivals. Get ready to groove to the beats of top artists and bands, surrounded by a vibrant festival atmosphere. Mark your calendar for July 22, 2023, as we transform Festival Grounds in City, State into a musical paradise. Tickets are available for $120.00. Presented by Festival World.",
+    "price": 120.00,
+    "date": "2023-07-22",
+    "creator": "Festival World",
+    "location": "Festival Grounds, City, State"
+    },
+    {
+    "id": 3,
+    "category": "Theater and Performing Arts",
+    "image": "https://i.ibb.co/3TBD6h7/theater.jpg",
+    "description": "Experience the magic of theater and performing arts as our talented actors and performers bring captivating stories to life. On September 10, 2023, join us at Local Theater Company's Theater Name in City, State for an evening filled with drama, laughter, and emotion. Tickets are priced at $75.00.",
+    "price": 75.00,
+    "date": "2023-09-10",
+    "creator": "Local Theater Company",
+    "location": "Theater Name, City, State"
+    },
+    {
+    "id": 4,
+    "category": "Film Screenings",
+    "image": "https://i.ibb.co/TKShLwd/cinema.jpg",
+    "description": "Be among the first to watch exclusive screenings of the latest blockbuster movies. Join us on August 5, 2023, at Cineplex in City, State, as we unveil cinematic masterpieces that will keep you on the edge of your seat. Tickets are available for $12.00. Presented by Cineplex.",
+    "price": 12.00,
+    "date": "2023-08-05",
+    "creator": "Cineplex",
+    "location": "Cinema Name, City, State"
+    },
+    {
+    "id": 5,
+    "category": "Comedy Shows",
+    "image": "https://i.ibb.co/ZmgHyMC/comedy.jpg",
+    "description": "Prepare to burst into laughter as the funniest comedians in town take the stage. Join us on October 20, 2023, at the Comedy Club in City, State, for a night of side-splitting humor. Tickets are priced at $30.00. Presented by Comedy Central.",
+    "price": 30.00,
+    "date": "2023-10-20",
+    "creator": "Comedy Central",
+    "location": "Comedy Club, City, State"
+    },
+    {
+    "id": 6,
+    "category": "Sports Events",
+    "image": "https://i.ibb.co/sK6Ttm4/sports.jpg",
+    "description": "Experience the adrenaline rush of cheering for your favorite teams and athletes at thrilling sports events. Join us on December 3, 2023, at Sports Arena in City, State, for a day of intense competition and excitement. Tickets are available for $45.00. Presented by Sports Arena.",
+    "price": 45.00,
+    "date": "2023-12-03",
+    "creator": "Sports Arena",
+    "location": "Stadium Name, City, State"
+    }
+    ]
