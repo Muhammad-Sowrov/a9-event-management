@@ -1,6 +1,17 @@
+import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../firebase/AuthProvider";
 
 const Register = () => {
+
+  const {signUp} = useContext(AuthContext)
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+ console.log(email);
+
+  
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
@@ -11,7 +22,8 @@ const Register = () => {
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
-                <input
+                <input 
+                  onChange={(e)=> setEmail(e.target.value)}
                   type="email"
                   name="email"
                   placeholder="email"
