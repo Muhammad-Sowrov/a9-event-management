@@ -10,7 +10,7 @@ const Banner = () => {
         <div className="hero-overlay bg-opacity-80"></div>
         <div className="hero-content text-center text-neutral-content">
           <div
-            data-aos="zoom-in"
+            
             className="max-w-md"
           >
             <h1 className="mb-5 text-5xl font-bold">Welcome To Event Fusion</h1>
