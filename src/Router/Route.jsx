@@ -5,6 +5,8 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Blog from "../Pages/Blog/Blog";
 import Error from "../Pages/Error/Error";
+import CardDetails from "../components/Home/CardDetails";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter ([
     {
@@ -18,6 +20,11 @@ const router = createBrowserRouter ([
                 loader:()=> fetch("/fake.json") 
             },
             {
+                path: '/data/:id',
+                element: <PrivateRoute><CardDetails></CardDetails></PrivateRoute>,
+                loader: () => fetch('/fake.json') 
+            },
+            {
                 path: '/login',
                 element: <Login></Login>
             },
@@ -27,7 +34,7 @@ const router = createBrowserRouter ([
             },
             {
                 path: '/blog',
-                element: <Blog></Blog>
+                element: <PrivateRoute><Blog></Blog></PrivateRoute>
             }
 
         ]

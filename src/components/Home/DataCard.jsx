@@ -2,15 +2,12 @@ import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 const DataCard = ({ data }) => {
-  const { category, image, description, price, date } = data;
+  const { id, category, image, description, price, date } = data;
   return (
     <div>
       <div className="card bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
+          <div data-aos="fade-up" data-aos-duration="1000">
             <img
               src={image}
               alt="img"
@@ -23,11 +20,14 @@ const DataCard = ({ data }) => {
           data-aos-duration="1000"
           className="card-body  text-start"
         >
-          <h2 className="card-title">{category}</h2>
+          <div className="">
+            <h2 className="card-title">{category}</h2>
+            <h2 className="card-title">Price: {price}$</h2>
+          </div>
           {description.length > 100 ? (
             <p>
               {description.slice(0, 100)}
-              <Link>
+              <Link to={`/data/${id}`}>
                 {" "}
                 <button className="px-1 py-1 rounded-sm text-white bg-slate-700">
                   Read More...

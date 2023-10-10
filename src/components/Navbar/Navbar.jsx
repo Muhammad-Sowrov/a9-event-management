@@ -3,7 +3,12 @@ import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../firebase/AuthProvider";
 
 const Navbar = () => {
-  const {user} = useContext(AuthContext)
+  const {user, logOut} = useContext(AuthContext);
+  const handleOut = () => {
+    logOut()
+    .then()
+    .then()
+  }
   console.log(user);
   const navLinks = (
     <>
@@ -22,7 +27,21 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink
+        {
+          user ? <NavLink
+          to="/login"
+          onClick={handleOut}
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "text-red-500 underline font-bold"
+              : ""
+          }
+        >
+          Log Out
+        </NavLink>
+          : <NavLink
           to="/login"
           className={({ isActive, isPending }) =>
             isPending
@@ -34,6 +53,8 @@ const Navbar = () => {
         >
           Login
         </NavLink>
+        }
+        
       </li>
       <li>
         <NavLink
