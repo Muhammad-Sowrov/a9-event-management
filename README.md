@@ -1,7 +1,7 @@
 
 
 
-Website Name: [Event Fusion](https://github.com/Muhammad-Sowrov)
+Website Name: [Event Fusion](https://event-fusion-5f964.web.app)
 
 
 ## Features
